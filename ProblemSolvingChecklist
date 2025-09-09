@@ -1,0 +1,69 @@
+
+"""
+LeetCode Problem-Solving Checklist
+------------------------------------------------
+Sample checklist for LeetCode problem solving to ensure a systematic approach.
+
+1. Problem Understanding
+   - [ ] Clarify Requirements: Do I understand the input/output and problem goal?
+   - [ ] Identify Constraints: What are the size, time/space limits, and input ranges?
+   - [ ] Define Goal: Can I restate the problem in my own words?
+
+2. Edge Cases Based on Parameter Input
+   - [ ] Data Type:
+         - Are inputs the expected type (e.g., int, str, list)? Could they be unexpected (e.g., float vs int)?
+         - Python Note: Check for None values or type mismatches (e.g., str vs int).
+   - [ ] Length/Size:
+         - What if input is empty (e.g., "" for str, [] for list)?
+         - What if input is min/max size (e.g., single char, max length list)?
+         - Are there size mismatches between inputs (e.g., two lists of different lengths)?
+   - [ ] Value Ranges:
+         - Are there boundary values (e.g., 0, negative numbers, sys.maxsize)?
+         - Python Note: No integer overflow like in Java/C++, but watch for large numbers in time complexity.
+   - [ ] Special Characters/Content:
+         - For strings: Are spaces, special chars, or case sensitivity issues present?
+         - For lists: Are there duplicates, sorted/unsorted data, or None values?
+
+3. Weird Behavior
+   - [ ] Unexpected Input Patterns:
+         - Could input be malformed (e.g., non-alphanumeric in str when expecting letters)?
+         - Are there repetitive/cyclic patterns risking infinite loops?
+   - [ ] Edge Case Scenarios:
+         - What happens at start/end of input (e.g., target at index 0 or -1)?
+         - Are there no-solution cases or logic-breaking inputs?
+   - [ ] Performance Edge Cases:
+         - Can my solution handle worst-case input (e.g., max constraints, skewed data)?
+         - Python Note: Watch for slow operations like list slicing or string concatenation in loops.
+
+4. Solution Design
+   - [ ] Algorithm Choice: Does my approach (brute force, greedy, DP) fit constraints?
+   - [ ] Time Complexity: What is it? Does it meet requirements?
+   - [ ] Space Complexity: What is it? Can I optimize?
+   - [ ] Alternative Approaches: Have I considered other methods and trade-offs?
+   - [ ] Python Note: Can I use built-in methods (e.g., list.sort(), str.find()) for simplicity?
+
+5. Implementation Checks
+   - [ ] Syntax Errors: Check typos, variable names, indentation.
+   - [ ] Logic Errors: Does each step match the algorithm? Are loops/conditions correct?
+   - [ ] Initialization: Are variables set properly (e.g., lists, counters)?
+   - [ ] Boundary Handling: Are list indices and loop ranges safe (no IndexError)?
+   - [ ] Python Note: Avoid mutating lists while iterating unless intentional; use list.copy() if needed.
+
+6. Testing and Validation
+   - [ ] Sample Test Cases: Does code pass provided examples?
+   - [ ] Edge Case Tests: Tested empty input, max/min values, etc.?
+   - [ ] Custom Test Cases: Can I create tests to break/confirm my code?
+   - [ ] Debugging: If failing, trace logic step-by-step (use print() or debugger).
+
+7. Optimization and Follow-Up
+   - [ ] Code Cleanliness: Readable with good names, comments, PEP 8 style?
+   - [ ] Optimization: Can I reduce time/space further (e.g., avoid nested loops)?
+   - [ ] Scalability: Would solution work with doubled input or changed constraints?
+   - [ ] Python Note: Use efficient data structures (e.g., set for O(1) lookup, deque for queues).
+
+8. Additional Interview Prep
+   - [ ] Problem Patterns: Does this fit a common pattern (two-pointers, sliding window, DFS)?
+   - [ ] Explainability: Can I explain my thought process clearly?
+   - [ ] Follow-Up Handling: Ready for 'optimize further' or 'what if input changes' questions?
+   - [ ] Reflection: What did I learn? How can I improve next time?
+"""
